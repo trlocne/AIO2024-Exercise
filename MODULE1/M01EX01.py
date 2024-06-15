@@ -2,8 +2,6 @@ import math
 import numpy as np
 
 # 1. Viết function thực hiện đánh giá classification model bằng F1-Score.
-
-
 def compute_f1_score(tp, fp, fn):
     check = False
     if type(tp) is not int:
@@ -33,7 +31,6 @@ def compute_f1_score(tp, fp, fn):
     return True
 
 # 2. Viết function mô tả theo 3 activation function.
-
 def is_number(n):
     try:
         float(n)
@@ -46,7 +43,6 @@ def simulate_activate_func():
     x = input("Mời bạn nhập giá trị x ")
     act_func = input(
         "Mời bạn nhận tên activation function chỉ có 3 loại (sigmoid, relu, elu) ")
-
     if is_number(x):
         x = float(x)
         if act_func == 'sigmoid':
@@ -64,8 +60,6 @@ def simulate_activate_func():
         print("x must be a number")
 
 # 3. Viết function lựa chọn regression loss function để tính loss:
-
-
 def calc_regres_loss():
     number_samples = input("Nhập vào một number samples ")
     if not (number_samples.isnumeric()):
@@ -89,8 +83,7 @@ def calc_regres_loss():
             else:
                 mse += (target[i] - predict[i])**2
                 los = mse
-            print(f"loss name: {loss.upper()}, sample: {i}, pred: {
-                  predict[i]}, target: {target[i]}, loss: {los}")
+            print(f"loss name: {loss.upper()}, sample: {i}, pred: {predict[i]}, target: {target[i]}, loss: {los}")
         mae = mae / float(number_samples)
         mse = mse / float(number_samples)
         rmse = math.sqrt(mse)
@@ -102,8 +95,6 @@ def calc_regres_loss():
             print(rmse)
 
 # 4. Viết 4 function để ước lượng hàm số sau:
-
-
 def appox_sin(x, n):
     sin = 0.0
     for i in range(n):
@@ -124,7 +115,6 @@ def appox_sinh(x, n):
         sinh += ((x**(2*i + 1)) / math.factorial((2*i + 1)))
     return sinh
 
-
 def appox_cosh(x, n):
     cosh = 0.0
     for i in range(n):
@@ -132,7 +122,5 @@ def appox_cosh(x, n):
     return cosh
 
 # 5. Viết hàm thực hiện Mean Different of nth Root Error.
-
-
 def md_nre_single_sample(y, y_hat, n, p):
     return (math.pow(y, 1/n) - math.pow(y_hat, 1/n))**p
