@@ -34,7 +34,6 @@ def compute_f1_score(tp, fp, fn):
 
 # 2. Viết function mô tả theo 3 activation function.
 
-
 def is_number(n):
     try:
         float(n)
@@ -90,7 +89,8 @@ def calc_regres_loss():
             else:
                 mse += (target[i] - predict[i])**2
                 los = mse
-            print(f"loss name: {loss.upper()}, sample: {i}, pred: {predict[i]}, target: {target[i]}, loss: {los}")
+            print(f"loss name: {loss.upper()}, sample: {i}, pred: {
+                  predict[i]}, target: {target[i]}, loss: {los}")
         mae = mae / float(number_samples)
         mse = mse / float(number_samples)
         rmse = math.sqrt(mse)
