@@ -26,8 +26,6 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,
 embedding = HuggingFaceEmbeddings()
 
 # build function proces file input
-
-
 def process_file(file: AskFileResponse):
     loader = None
     if file.type == 'text/plain':
@@ -42,7 +40,6 @@ def process_file(file: AskFileResponse):
         docs.metadata['source'] = f"source_{i}"
     return docs
 
-
 def get_vector_db(file: AskFileResponse):
     docs = process_file(file)
     cl.user_session.set("doc", docs)
@@ -50,7 +47,6 @@ def get_vector_db(file: AskFileResponse):
                                       embedding=embedding)
 
     return vector_db
-
 
 def get_huggingface_llm(model_name: str = "lmsys/vicuna-7b-v1.5",
                         max_new_token: int = 512):
@@ -84,14 +80,12 @@ def get_huggingface_llm(model_name: str = "lmsys/vicuna-7b-v1.5",
     )
     return llm
 
-
 LLM = get_huggingface_llm()
 
 welcome_message = """ Welcome to the PDF QA! To get started:
 1. Upload a PDF or text file
 2. Ask a question about the file
 """
-
 
 @cl.on_chat_start
 async def on_chat_start():
@@ -136,7 +130,6 @@ async def on_chat_start():
     await msg.update()
 
     cl.user_session.set("chain", chain)
-
 
 @cl.on_message
 async def on_message(message: cl.Message):
