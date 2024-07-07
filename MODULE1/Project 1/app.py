@@ -6,7 +6,6 @@ from io import BytesIO
 import cv2
 from PIL import Image
 
-
 def predict(file):
     if file is not None:
         with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as temp_file:
@@ -19,7 +18,6 @@ def predict(file):
                             imgsz=640)
     annotated_img = results[0].plot()
     return annotated_img
-
 
 st.title("Helmet Safety Detection")
 st.header("Author: @tr.locne")
