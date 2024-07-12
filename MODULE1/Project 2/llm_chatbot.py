@@ -18,14 +18,11 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain import hub
 
-"""## **2. Initialize text splitter and embedding**"""
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,
                                                chunk_overlap=100)
 
 embedding = HuggingFaceEmbeddings()
-
-"""## **3. Create a function to load and split pdf file**"""
 
 def process_file(file: AskFileResponse):
     if file.type == "text/plain":
@@ -40,7 +37,6 @@ def process_file(file: AskFileResponse):
         doc.metadata["source"] = f"source_{i}"
     return docs
 
-"""## **4. Create a function to get vector database**"""
 
 def get_vector_db(file: AskFileResponse):
     docs = process_file(file)
@@ -49,7 +45,6 @@ def get_vector_db(file: AskFileResponse):
                                       embedding=embedding)
     return vector_db
 
-"""## **5. Create a function to get LLMs (Vicuna)**"""
 
 def get_huggingface_llm(model_name: str = "lmsys/vicuna-7b-v1.5",
                         max_new_token: int = 512):
