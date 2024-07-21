@@ -10,8 +10,6 @@ bg2_img = cv2.resize(bg2_img, (678, 381))
 obj = cv2.imread('./Exercise04_Data/Object.png', 1)
 obj = cv2.resize(obj, (678, 381))
 
-
-
 def compute_difference(bg_img, input_img):
     difference_three_channel = cv2.absdiff(bg_img, input_img)
     difference_single_channel = np.sum(difference_three_channel, axis=2) / 3.0
