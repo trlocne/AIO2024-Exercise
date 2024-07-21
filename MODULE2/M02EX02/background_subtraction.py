@@ -24,13 +24,10 @@ def compute_binary_mask(difference_single_channel):
 def replaceBackground(bg1_image, bg2_image, ob_image):
     difference_single_channel = compute_difference(bg1_image,ob_image)
     binary_mask = compute_binary_mask(difference_single_channel)
-
     output = np.where(binary_mask==255, ob_image, bg2_image)
-
     return output
 
 output = replaceBackground(bg1_img, bg2_img, obj)
 cv2.imshow('Object', output)
-
 cv2.waitKey(0)
 cv2.destroyAllWindows()
