@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JupyterPersistentConnectionParameters">
+    <option name="moduleParameters">
+      <map>
+        <entry key="$PROJECT_DIR$/.idea/M02EX02.iml">
+          <value>
+            <JupyterConnectionParameters>
+              <option name="managed" value="true" />
+              <option name="sdkName" value="" />
+              <option name="environmentVariables">
+                <map>
+                  <entry name="Path" value="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\msys64\mingw64\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1\;C:\Users\loctr\anaconda3;C:\Users\loctr\anaconda3\Library\mingw-w64\bin;C:\Users\loctr\anaconda3\Library\usr\bin;C:\Users\loctr\anaconda3\Library\bin;C:\Users\loctr\anaconda3\Scripts;C:\Users\loctr\AppData\Local\Programs\Python\Launcher\;C:\Users\loctr\AppData\Local\Microsoft\WindowsApps;C:\Users\loctr\AppData\Roaming\npm;C:\Users\loctr\AppData\Local\Yarn\bin;C:\Users\loctr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\CLion 2023.3.3\bin;;C:\Users\loctr\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\loctr\AppData\Local\Microsoft\WindowsApps;C:\Users\loctr\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\loctr\AppData\Local\Programs\Microsoft VS Code\bin;" />
+                </map>
+              </option>
+            </JupyterConnectionParameters>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
