@@ -1,44 +1,0 @@
-2024-07-08 23:23:45 - Use pytorch device_name: cuda
-2024-07-08 23:23:45 - Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
-C:\Users\loctr\anaconda3\envs\llm_prj\lib\site-packages\huggingface_hub\file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
-  warnings.warn(
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|#####     | 1/2 [00:23<00:23, 23.37s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:31<00:00, 14.52s/it]Loading checkpoint shards: 100%|##########| 2/2 [00:31<00:00, 15.85s/it]
-C:\Users\loctr\anaconda3\envs\llm_prj\lib\site-packages\transformers\generation\configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-  warnings.warn(
-C:\Users\loctr\anaconda3\envs\llm_prj\lib\site-packages\transformers\generation\configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-  warnings.warn(
-C:\Users\loctr\anaconda3\envs\llm_prj\lib\site-packages\transformers\generation\configuration_utils.py:515: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-C:\Users\loctr\anaconda3\envs\llm_prj\lib\site-packages\transformers\generation\configuration_utils.py:520: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-2024-07-08 23:24:25 - Your app is available at http://localhost:8000
-2024-07-08 23:24:27 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:24:27 - Translated markdown file for vi not found. Defaulting to chainlit.md.
-2024-07-08 23:24:33 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:24:34 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
-2024-07-08 23:24:47 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:25:12 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:25:24 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:25:46 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:25:58 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:26:06 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:26:13 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:26:20 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:26:39 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:26:59 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:19 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:26 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:26 - Translated markdown file for vi not found. Defaulting to chainlit.md.
-2024-07-08 23:27:49 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:51 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:54 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:27:59 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:28:23 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:28:25 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:28:40 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:28:40 - Translated markdown file for vi not found. Defaulting to chainlit.md.
-2024-07-08 23:28:46 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:29:04 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:29:16 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:29:54 - Translation file for vi not found. Using default translation en-US.
-2024-07-08 23:31:27 - Translation file for vi not found. Using default translation en-US.
