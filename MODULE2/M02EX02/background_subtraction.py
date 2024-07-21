@@ -23,7 +23,7 @@ def compute_binary_mask(difference_single_channel):
     difference_binary = np.stack((difference_binary,) * 3, axis=-1).astype('uint8')
     return difference_binary
 
-def replaceBackGround(bg1_image, bg2_image, ob_image):
+def replaceBackground(bg1_image, bg2_image, ob_image):
     difference_single_channel = compute_difference(bg1_image,ob_image)
     binary_mask = compute_binary_mask(difference_single_channel)
 
@@ -31,7 +31,7 @@ def replaceBackGround(bg1_image, bg2_image, ob_image):
 
     return output
 
-output = replaceBackGround(bg1_img, bg2_img, obj)
+output = replaceBackground(bg1_img, bg2_img, obj)
 cv2.imshow('Object', output)
 
 cv2.waitKey(0)
