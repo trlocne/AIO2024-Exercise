@@ -39,7 +39,8 @@ def replace_background(bg1_image, bg2_image, ob_image):
     return output
 
 # Replace the background and display the output
-output = replace_background(bg1_img, bg2_img, obj)
-cv2.imshow('Object', output)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+if __name__ == "__main__":
+    output = replace_background(bg1_img, bg2_img, obj)
+    cv2.imshow('Object', output)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
